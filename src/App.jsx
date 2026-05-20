@@ -8,7 +8,7 @@ export default function UlyssesChat() {
     {
       role: "assistant",
       content:
-        "...Así que has encontrado la manera de hablar conmigo sin pasar por el capullo de Hugo. Interesante. Si te mandan Eva y Fran diles que son unos idiotas de mi parte. Bueno. ¿Qué quieres saber? No tengo todo el día",
+        "...Así que has encontrado la manera de hablar conmigo sin pasar por el capullo de Hugo. Interesante. Si te mandan Eva o Fran diles que son unos idiotas de mi parte. Oye, antes de nada, ¿quién eres? ¿Alguien con pasta deseando invertir en Cosas Terrible o un curioso que no tiene nada mejor que hacer que hablar con un oso de peluche? Si es lo segundo, joder, lo siento. Si es lo primero, que sepas que estás en el sitio correcto. Yo soy tu oso.",
     },
   ]);
   const [input, setInput] = useState("");
