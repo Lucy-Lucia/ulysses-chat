@@ -8,7 +8,7 @@ export default function UlyssesChat() {
     {
       role: "assistant",
       content:
-        "...Así que alguien ha encontrado la manera de hablar conmigo sin pasar por el capullo de Hugo. Interesante.\n\n*da una calada larga al Marlboro*\n\nBueno. ¿Qué quieres saber?",
+        "...Así que has encontrado la manera de hablar conmigo sin pasar por el capullo de Hugo. Interesante. Si te mandan Eva y Fran diles que son unos idiotas de mi parte. Bueno. ¿Qué quieres saber? No tengo todo el día",
     },
   ]);
   const [input, setInput] = useState("");
@@ -59,7 +59,7 @@ export default function UlyssesChat() {
       const data = await response.json();
       const text =
         data.content?.find((b) => b.type === "text")?.text ||
-        "...me cago en la puta. Algo ha fallado.";
+        "...joder. Algo ha fallado.";
 
       setMessages((prev) => [...prev, { role: "assistant", content: text }]);
     } catch (err) {
@@ -68,7 +68,7 @@ export default function UlyssesChat() {
         {
           role: "assistant",
           content:
-            "Me cago en la puta. Se ha caído la conexión. Como todo en la vida de Hugo... *da una calada nerviosa*",
+            "Me cago en la puta. Se ha caído la conexión. Como todo en la vida de Hugo...",
         },
       ]);
     } finally {
