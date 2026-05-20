@@ -68,6 +68,7 @@ Responde SIEMPRE en español. Respuestas concisas (2-5 frases normalmente, salvo
     });
 
     const data = await response.json();
+    console.log("Anthropic response:", JSON.stringify(data));
 
     return {
       statusCode: 200,
